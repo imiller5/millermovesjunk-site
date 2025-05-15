@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miller Moves Junk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <!-- Header with Nav Only (Logo removed) -->
+  <header class="bg-yellow-100 shadow-md py-4">
+    <div class="container mx-auto px-4 flex justify-center">
+      <!-- Navigation centered -->
+      <nav class="flex space-x-8">
+        <a href="#about" class="text-gray-800 hover:text-black uppercase font-medium">About</a>
+        <a href="#services" class="text-gray-800 hover:text-black uppercase font-medium">Services</a>
+        <a href="#contact" class="text-yellow-700 hover:text-yellow-800 uppercase font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Embedded Logo in Body -->
+  <section id="hero" class="bg-cover bg-center" style="background-image: url('./hero-bg.jpg');">
+    <div class="bg-black bg-opacity-70 py-32 text-center text-white">
+      <!-- Logo in body -->
+      <div class="mb-8 flex justify-center">
+        <img src="Logo.png" alt="Miller Moves Junk Logo" class="h-80 w-auto object-contain" />
+      </div>
+      <h1 class="text-5xl font-bold uppercase mb-4 text-yellow-400">We Move Junk<br />So You Don’t Have To</h1>
+      <p class="text-xl max-w-2xl mx-auto mb-2">Professional, reliable, and eco-friendly junk removal in Edgewater, MD and surrounding areas.</p>
+      <!-- Additional white text -->
+      <p class="text-white mb-6 italic">Schedule your free estimate today!</p>
+       <p class="text-yellow-400 font-medium">Call us: <a href="tel:4105714738" class="hover:underline">(410) 571-4738</a></p>
+      <!-- Expedited estimate note -->
+      <p class="text-yellow-400 mb-6 font-bold">Text a photo for an expedited estimate</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdr8DdqXoS8vB90nIDoE2Ao_o7onZ43oMbnaElrLwrJqk0-zg/viewform" target="_blank" class="inline-block bg-yellow-600 text-white font-semibold py-3 px-8 rounded-lg shadow hover:bg-yellow-500 transition">
+        Get Started
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-yellow-50 border-t border-gray-300">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4 text-yellow-700">About Us</h2>
+      <p class="max-w-3xl mx-auto text-lg text-gray-700">
+        Miller Moves Junk is a family-owned business serving Edgewater, MD and surrounding areas. We specialize in residential junk removal and yard waste disposal. Our mission is to make your space clutter-free while minimizing environmental impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 container mx-auto px-4 bg-white border-t border-gray-300">
+    <h2 class="text-3xl font-semibold text-center mb-8 text-yellow-700">Our Services</h2>
+    <ul class="max-w-2xl mx-auto space-y-4 text-lg text-gray-800">
+      <li class="text-green-600 font-semibold">Same-day service available</li>
+      <li class="text-red-600 font-semibold">Hazardous waste <strong>not</strong> accepted</li>
+      <li>Single Item Pickup</li>
+      <li>Partial Load Removal</li>
+      <li>Full Load Hauling</li>
+      <li>Yard Waste Removal</li>
+      <li>Eco-Friendly Disposal Practices</li>
+      <li>Extra Labor Support (as needed)</li>
+    </ul>
+  </section>
+
+  <!-- Transparent Pricing Section -->
+  <section id="pricing" class="py-16 bg-white border-t border-gray-300">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-8 text-yellow-700">Transparent Pricing</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="p-6 border rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Single Item Pickup</h3>
+          <p class="text-gray-800 font-semibold">$75–$175 per item</p>
+          <p class="text-sm text-gray-600 mt-1">Up to 1 item</p>
+        </div>
+        <div class="p-6 border rounded-lg">
+          <h3 class="text-xl font-bold mb-2">1/4 Load</h3>
+          <p class="text-gray-800 font-semibold">$125–$225</p>
+        </div>
+        <div class="p-6 border rounded-lg">
+          <h3 class="text-xl font-bold mb-2">1/2 Load</h3>
+          <p class="text-gray-800 font-semibold">$245–$345</p>
+        </div>
+        <div class="p-6 border rounded-lg">
+          <h3 class="text-xl font-bold mb-2">3/4 Load</h3>
+          <p class="text-gray-800 font-semibold">$365–$465</p>
+        </div>
+        <div class="p-6 border rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Full Load</h3>
+          <p class="text-gray-800 font-semibold">$490–$590</p>
+        </div>
+        <div class="sm:col-span-2 lg:col-span-3 p-6 border rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Additional Labor</h3>
+          <p class="text-gray-800 font-semibold">$50/hour per extra helper</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-yellow-100 border-t border-gray-300">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4 text-yellow-800">Get in Touch</h2>
+      <p class="mb-4 text-gray-800">Ready to clear out the clutter? Fill out our intake form or give us a call.</p>
+      <div class="flex flex-col items-center space-y-4">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdr8DdqXoS8vB90nIDoE2Ao_o7onZ43oMbnaElrLwrJqk0-zg/viewform" target="_blank" class="bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-yellow-500 transition">Intake Form</a>
+        <!-- Display phone number as text -->
+        <p class="text-gray-800 font-medium">Call us: <a href="tel:4105714738" class="hover:underline">(410) 571-4738</a></p>
+      </div>
+      <p class="mt-8 text-sm text-gray-600">© 2025 Miller Moves Junk. All rights reserved.</p>
+      <!-- Expedited estimate footer -->  
+    </div>
+  </section>
+</body>
+</html>
