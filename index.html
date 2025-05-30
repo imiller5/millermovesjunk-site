@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="Content-Security-Policy"
+    content="
+      default-src 'self';
+      script-src 'self' https://cdn.tailwindcss.com;
+      style-src 'self' https://cdn.tailwindcss.com;
+      img-src 'self' data: https:;
+      font-src 'self';
+      frame-ancestors 'none';
+    ">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Miller Moves Junk</title>
@@ -14,7 +23,9 @@
       <nav class="flex space-x-8">
         <a href="#about" class="text-gray-800 hover:text-black uppercase font-medium">About</a>
         <a href="#services" class="text-gray-800 hover:text-black uppercase font-medium">Services</a>
+        <a href="pricing.html" class="text-gray-800 hover:text-black uppercase font-medium">Pricing</a>
         <a href="#contact" class="text-yellow-700 hover:text-yellow-800 uppercase font-semibold">Contact</a>
+        <a href="faq.html" class="text-gray-800 hover:text-black uppercase font-medium">FAQ</a>
       </nav>
     </div>
   </header>
@@ -70,19 +81,18 @@
       <h2 class="text-3xl font-semibold mb-8 text-yellow-700">Transparent Pricing</h2>
       <p class="text-sm text-gray-600 mb-6">Prices apply to curbside/easy-access services. Subject to additional charges.</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        <div class="p-6 border rounded-lg">
-          <h3 class="text-xl font-bold mb-2">Single Item Pickup</h3>
-          <p class="text-gray-800 font-semibold">$75–$125 per item</p>
-          <p class="text-sm text-gray-600 mt-1">Up to 1 item</p>
-        </div>
-        <div class="p-6 border rounded-lg">
-          <h3 class="text-xl font-bold mb-2">1/2 Load (~2.3 yd³)</h3>
-          <p class="text-gray-800 font-semibold">$90–$140</p>
-        </div>
-        <div class="p-6 border rounded-lg">
-          <h3 class="text-xl font-bold mb-2">Full Load (~4.55 yd³)</h3>
-          <p class="text-gray-800 font-semibold">$175–$225</p>
-        </div>
+      <div class="p-6 border rounded-lg">
+        <h3 class="text-xl font-bold mb-2">Single-item</h3>
+        <p class="text-gray-800 font-semibold">$75–$150 per item</p>
+      </div>
+      <div class="p-6 border rounded-lg">
+        <h3 class="text-xl font-bold mb-2">½ Load (4 yd³)</h3>
+        <p class="text-gray-800 font-semibold">$160–$235</p>
+      </div>
+      <div class="p-6 border rounded-lg">
+        <h3 class="text-xl font-bold mb-2">Full Load (8 yd³)</h3>
+        <p class="text-gray-800 font-semibold">$320–$395</p>
+      </div>
       </div>
       <!-- Additional Charges Section -->
       <h3 class="text-2xl font-semibold mt-12 mb-6 text-yellow-700">Additional Charges</h3>
@@ -90,10 +100,10 @@
         <div class="p-6 border rounded-lg">
           <h4 class="text-lg font-bold mb-2">Mileage Fee</h4>
           <p class="text-gray-800 font-semibold">$1.25 per mile</p>
-          <p class="text-sm text-gray-600 mt-1">Only applies to jobs over 20 miles away</p>
+          <p class="text-sm text-gray-600 mt-1">20 miles free (round-trip)</p>
         </div>
         <div class="p-6 border rounded-lg">
-          <h4 class="text-lg font-bold mb-2">Single Heavy/Bulk Item (&gt;150 lbs)</h4>
+          <h4 class="text-lg font-bold mb-2">Single Heavy/Bulk Item</h4>
           <p class="text-gray-800 font-semibold">$55 per item</p>
           <p class="text-sm text-gray-600 mt-1">Per item over 150 lbs</p>
         </div>
@@ -109,7 +119,7 @@
   <section id="contact" class="py-16 bg-yellow-100 border-t border-gray-300">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-semibold mb-4 text-yellow-800">Get in Touch</h2>
-      <p class="mb-4 text-gray-800">Ready to clear out the clutter? Fill out our intake form or give us a call.</p>
+      <p class="mb-4 text-gray-800">Got Junk? Ready to clear out the clutter? Fill out our intake form or give us a call.</p>
       <div class="flex flex-col items-center space-y-4">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdr8DdqXoS8vB90nIDoE2Ao_o7onZ43oMbnaElrLwrJqk0-zg/viewform" target="_blank" class="bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-yellow-500 transition">Intake Form</a>
         <!-- Display phone number as text -->
